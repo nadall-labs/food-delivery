@@ -1,0 +1,98 @@
+.banner {
+  background-color: #fafafa;
+  //   background-color: #a59a9a;
+  .p1 {
+    padding-top: 50px;
+    color: #737373;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .p2 {
+    padding-top: 17px;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #252b42;
+  }
+
+  .p3 {
+    padding-top: 27px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #737373;
+  }
+
+  .store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    button {
+      width: 236px;
+
+      &:last-child {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .app_food {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/imgfood.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    .p1 {
+      padding-top: 73px;
+      line-height: 36px;
+    }
+    .p2 {
+      font-size: 58px;
+      line-height: 80px;
+    }
+
+    .p3 {
+      margin-top: 27px;
+    }
+    .p1,
+    .p2,
+    .p3 {
+      color: #ffffff;
+      max-width: 937px;
+    }
+
+    .store {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 54px;
+      button {
+        &:first-child {
+          margin-right: 16px;
+        }
+        &:last-child {
+          margin-top: 0;
+        }
+        &.btn__outline {
+          background-color: transparent;
+          color: #ffffff;
+          border: 2px solid #ffffff;
+        }
+      }
+    }
+
+    .app_food {
+      margin-top: 16px;
+    }
+  }
+}
